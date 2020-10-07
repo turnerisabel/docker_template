@@ -23,93 +23,86 @@ endif::backend-html5[]
 
 // print the toc here (not at the default position)
 //toc::[]
-= Projektauftrag
+= Project assignment
 
-== Projektbezeichnung
+== Project title
 LeoDataBaseLearner
 
-== Problemstellung / Projektauslöser / Vorprojekt
-Schüler verlieren nach der Zeit den Überblick über den gelernten Stoff.
+== Problem definition / project trigger / preliminary project
+Students lose track of what they have learned over time.
 
-Der Lehrer muss bei einem Test die SQL-Befehle der Schüler einzeln auf
-die Korrektheit überprüfen, da grundsätzlich mehrere Lösungsansätze
-möglich sind.
+During a test, the teacher must check the SQL commands of the students individually for
+check the correctness, since there are basically several possible solutions
+are possible.
 
-Schüler bitten Lehrer ständig neue Übungen zur Verfügung zu stellen,
-dies ist jedoch für die Lehrer aus Zeitgründen meist nicht möglich.
+Students ask teachers to constantly provide new exercises,
+However, this is usually not possible for the teachers due to lack of time.
 
-Auch das Überprüfen der einzelnen SQL-Statements ist für die Lehrer mit
-hohem Arbeitsaufwand verbunden.
+Checking the individual SQL statements is also possible for the teachers with
+high workload.
 
+== Task
+Development of a software product for students and teachers of the HTL Leonding.
+The system consists of 3 functions.
+Students can choose whether they want to practice, learn or be tested.
 
-== Aufgabenstellung
-Erstellung eines Softwareproduktes für Schüler und Lehrer der HTL Leonding.
-Das System besteht aus 3 Funktionen.
-Schüler können daraus wählen, ob sie coden üben, lernen oder ob sie geprüft werden wollen.
+The examination tasks can be created by teachers using the system.
+Afterwards an evaluation of the tasks should be done.
 
-Die Prüfungsaufgaben können von Lehrer/innen mit Hilfe des Systems erstellt werden.
-Anschließend soll eine Auswertung der Aufgaben erfolgen.
+Regarding the layout 3 modules should be shown:
 
-Bezüglich des Layouts sollen 3 Module zu sehen sein:
-
-* Text/Angabe
+* Text/information
 * Coding
-* Auswertung
+* Evaluation
 
-Der Lernfortschritt soll über einen Balken dokumentiert werden.
+The learning progress should be documented by a bar.
 
-== Anforderungen
-=== Funktionale Anforderungen
-- SQL üben
-- Leistung durch Prüfung feststellen
-- Tests von Lehrern
+== Requirements
+=== Functional requirements
+- Practice SQL
+- Determine performance by testing
+- Tests from teachers
 
-=== Nichtfunktionale Anforderungen
-- Robustheit der Anwendung gegenüber Benutzeraktionen
-( BSP: Verweigerung von SQL-Injections des Benutzers)
-- schnelle Rückmeldung des Systems
+=== Non-functional requirements
+- Robustness of the application against user actions
+( BSP: Denial of SQL injections by the user )
+- fast feedback of the system
+== Project goals
 
-== Projektziele
+The aim is to make it easier for pupils to enter the HTL,
+by having such an exercise platform made available to them.
 
-Schülern soll der Einstieg in die HTL erleichtert werden,
-indem sie eine solche Übungsplattform zur Verfügung gestellt bekommen.
+It should also be a relief for teachers, as they will no longer
+have to create each exercise example yourself.
 
-Auch für Lehrer soll es eine Erleichterung werden, da sie nicht mehr
-jedes Übungsbeispiel selbst erstellen müssen.
+There is also a uniformity of what has been learned.
 
-Eine Einheitlichkeit des Gelernten besteht ebenso.
+== Project phases / Milestones
+- Get to know technologies
+- Create data model
+- Surface
+- Upload exercises
+- Edit/delete exercises
+- Create inspection
 
-== Projektphasen / Meilensteine
-- Technologien kennenlernen
-- Datenmodell erstellen
-- Oberfläche
-- Übungen hochladen
-- Übungen bearbeiten/löschen
-- Prüfung anlegen
--
-
-
-== Projektstart
-
+== Project start
 2.10.2020
 
-== Projektende
+== Project end
+End of May 2021
 
-Ende Mai 2021
-
-== Projektressourcen
-
-==== Personal:
-- Primetzhofer Vanessa (Projektleiterin)
-- Steigersdorfer Marah
+== Project resources
+==== Personnel:
+- Primetzhofer Vanessa (Project Manager)
+- Steigersdorf Marah
 - Turner Isabel
-- ( Donnabauer Christian)
+- ( Donnabauer Christian )
 
 ==== Material:
-- Datenbank
+- Database
 
-==== Sonstige Aufwendungen:
-- viel Zeit
+==== Other expenses:
+- a lot of time
 
 
 
