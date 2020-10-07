@@ -1,6 +1,6 @@
-= My Project
-firstname lastname
-1.1.0, yyyy-mm-dd: Some notes
+= LeoDatabaseLearner
+Steigersdorfer Marah, Turner Isabel, Primetzhofer Vanessa
+1.0.0, 2020-10-02: Some notes
 ifndef::imagesdir[:imagesdir: images]
 //:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
 :sourcedir: ../src/main/java
@@ -12,68 +12,104 @@ ifndef::imagesdir[:imagesdir: images]
 ifdef::backend-html5[]
 
 // https://fontawesome.com/v4.7.0/icons/
+
+////
 icon:file-text-o[link=https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/{docname}.adoc] ‏ ‏ ‎
 icon:github-square[link=https://github.com/htl-leonding-college/asciidoctor-docker-template] ‏ ‏ ‎
 icon:home[link=https://htl-leonding.github.io/]
+////
 endif::backend-html5[]
+
 
 // print the toc here (not at the default position)
 //toc::[]
+= Projektauftrag
 
-== Pflichtenheft "Was mache ich"
+== Projektbezeichnung
+LeoDataBaseLearner
+
+== Problemstellung / Projektauslöser / Vorprojekt
+Schüler verlieren nach der Zeit den Überblick über den gelernten Stoff.
+
+Der Lehrer muss bei einem Test die SQL-Befehle der Schüler einzeln auf
+die Korrektheit überprüfen, da grundsätzlich mehrere Lösungsansätze
+möglich sind.
+
+Schüler bitten Lehrer ständig neue Übungen zur Verfügung zu stellen,
+dies ist jedoch für die Lehrer aus Zeitgründen meist nicht möglich.
+
+Auch das Überprüfen der einzelnen SQL-Statements ist für die Lehrer mit
+hohem Arbeitsaufwand verbunden.
 
 
-=== Ausgangssituation
+== Aufgabenstellung
+Erstellung eines Softwareproduktes für Schüler und Lehrer der HTL Leonding.
+Das System besteht aus 3 Funktionen.
+Schüler können daraus wählen, ob sie coden üben, lernen oder ob sie geprüft werden wollen.
 
-Die HTL Leonding ist eine HTL im oö. Zentralraum mit ca. 1000 Schülern und den Fachabteilungen Medientechnik, Informatik, ....
+Die Prüfungsaufgaben können von Lehrer/innen mit Hilfe des Systems erstellt werden.
+Anschließend soll eine Auswertung der Aufgaben erfolgen.
 
-=== Istzustand
-----
-Beschreibung der speziellen Situation zB in der Abteilung
-----
-=== Problemstellung
-=== Aufgabenstellung
-==== Funktionale Anforderungen
+Bezüglich des Layouts sollen 3 Module zu sehen sein:
 
-[plantuml,wireframe,png]
-----
-@startsalt
-{
-Name         | "                 "
-Modifiers:   | { (X) public | () default | () private | () protected
-	            [] abstract | [] final   | [] static }
-Superclass:  | { "java.lang.Object " | [Browse...] }
-}
-@endsalt
-----
-==== Nichtfunktionale Anforderungen (NFA)
-=== Ziele
-=== Mengengerüst
-=== Rahmenbedingungen
-zB Vorgaben vom Auftraggeber
+* Text/Angabe
+* Coding
+* Auswertung
 
-== Entwurf "Wie mache ich es"
-=== Systemarchitektur
-=== ...
+Der Lernfortschritt soll über einen Balken dokumentiert werden.
 
-== Projekthandbuch "Organisatorische Rahmenbedingungen"
+== Anforderungen
+=== Funktionale Anforderungen
+- SQL üben
+- Leistung durch Prüfung feststellen
+- Tests von Lehrern
 
-=== GANTT-Diagramm
+=== Nichtfunktionale Anforderungen
+- Robustheit der Anwendung gegenüber Benutzeraktionen
+( BSP: Verweigerung von SQL-Injections des Benutzers)
+- schnelle Rückmeldung des Systems
 
-mit User-Stories (definiert in YouTrack)
+== Projektziele
 
-[plantuml,gantt-protoype,png]
-----
-@startuml
-[Test prototype] lasts 10 days
-[Prototype completed] happens at [Test prototype]'s end
-[Setup assembly line] lasts 12 days
-[Setup assembly line] starts at [Test prototype]'s end
-[Test prototype 2] lasts 3 days
-[Test prototype 2] starts at [Prototype completed]'s end
-@enduml
-----
+Schülern soll der Einstieg in die HTL erleichtert werden,
+indem sie eine solche Übungsplattform zur Verfügung gestellt bekommen.
 
-* link:minutes-of-meeting.html[Protokollvorlage]
-* link:demo.html[Demo]
+Auch für Lehrer soll es eine Erleichterung werden, da sie nicht mehr
+jedes Übungsbeispiel selbst erstellen müssen.
+
+Eine Einheitlichkeit des Gelernten besteht ebenso.
+
+== Projektphasen / Meilensteine
+- Technologien kennenlernen
+- Datenmodell erstellen
+- Oberfläche
+- Übungen hochladen
+- Übungen bearbeiten/löschen
+- Prüfung anlegen
+-
+
+
+== Projektstart
+
+2.10.2020
+
+== Projektende
+
+Ende Mai 2021
+
+== Projektressourcen
+
+==== Personal:
+- Primetzhofer Vanessa (Projektleiterin)
+- Steigersdorfer Marah
+- Turner Isabel
+- ( Donnabauer Christian)
+
+==== Material:
+- Datenbank
+
+==== Sonstige Aufwendungen:
+- viel Zeit
+
+
 
